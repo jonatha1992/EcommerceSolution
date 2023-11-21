@@ -9,15 +9,23 @@ namespace Ecommerce.Domain
 
     public class Order : BaseDomainModel
     {
-     
+
         public string? BuyerName { get; set; }
         public string? BuyerEmail { get; set; }
         public OrderAddress? OrderAddress { get; set; }
         public IReadOnlyList<OrderItem>? OrderItems { get; set; }
+
+        [Column(TypeName = "decimal(10,2)")]
         public decimal Subtotal { get; set; }
         public OrderStatus Status { get; set; } = OrderStatus.Pending;
+
+        [Column(TypeName = "decimal(10,2)")]
         public decimal Total { get; set; }
+
+        [Column(TypeName = "decimal(10,2)")]
         public decimal Tax { get; set; }
+
+        [Column(TypeName = "decimal(10,2)")]
         public decimal ShippingPrice { get; set; }
         public string? PaymentIntentId { get; set; }
         public string? ClientSecret { get; set; }
@@ -64,10 +72,12 @@ namespace Ecommerce.Domain
                 o => o.ToString(),
                 o => (OrderStatus)Enum.Parse(typeof(OrderStatus), o));
 
-            builder.Property(x=>x.Subtotal).HasPrecision(10, 2);
+            builder.Property(x => x.Subtotal).HasPrecision(10, 2);
             builder.Property(x => x.Total).HasPrecision(10, 2);
             builder.Property(x => x.Tax).HasPrecision(10, 2);
             builder.Property(x => x.ShippingPrice).HasPrecision(10, 2);
+
+
 
         }
     }

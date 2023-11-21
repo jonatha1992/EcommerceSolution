@@ -9,5 +9,5 @@ public abstract class BaseDomainModel {
 
     public DateTime? LastModifiedDate {get;set;}
 
-    public DateTime? LastModifiedBy { get; set; }
+    public string? LastModifiedBy { get; set; }
 }

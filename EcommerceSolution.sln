@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.Aplication", "src\Core\Ecommerce.Aplication\Ecommerce.Aplication.csproj", "{5175439E-BD90-4BAD-80A9-992F64800CCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.Aplication", "src\Aplication\Ecommerce.Aplication.csproj", "{5175439E-BD90-4BAD-80A9-992F64800CCC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.Domain", "src\Core\Ecommerce.Domain\Ecommerce.Domain.csproj", "{B98F2CF2-C335-448F-A51E-57C68E863D49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.Domain", "src\Domain\Ecommerce.Domain.csproj", "{B98F2CF2-C335-448F-A51E-57C68E863D49}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.Api", "src\Api\Ecommerce.Api.csproj", "{EC4CBC97-370A-4442-ACAA-88D85F6A852B}"
 EndProject
