@@ -34,4 +34,7 @@
 		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.1" />
 		<PackageReference Include="Stripe.net" Version="41.2.0" />
 	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Domain\Ecommerce.Domain.csproj" />
+	</ItemGroup>
 </Project>
